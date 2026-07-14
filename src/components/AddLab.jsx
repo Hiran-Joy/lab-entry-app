@@ -26,7 +26,7 @@ const AddStudent = () => {
     console.log(input);
 
     axios
-      .post("https://host-demo-app.onrender.com/api/add", input) // Change API if needed
+      .post("http://localhost:3000/add_lab", input) // Change API if needed
       .then((response) => {
         console.log(response.data);
         alert("Student record added successfully!");
