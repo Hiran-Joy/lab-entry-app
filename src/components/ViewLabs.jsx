@@ -6,7 +6,7 @@ const ViewLabs = () => {
 
   const fetchData = () => {
     axios
-      .get("https://host-demo-app.onrender.com/api/view")
+      .get("http://localhost:3000/view_lab")
       .then((response) => {
         setLabs(response.data);
       })
